@@ -26,11 +26,15 @@
     flex: 0 0 auto;
 }
 
+html{
+    font-size: 95%;
+}
+
 a{text-decoration: none;}
 ul{list-style-type: none; display: flex;}
 
 
-body{
+header{
     font-family: var(--mainFont);
     background-image: url(../img/bg.jpg);
     background-size: cover;
@@ -39,7 +43,7 @@ body{
 }
 
 .container{
-    max-width: 80rem;
+    max-width: 114rem;
     margin: 0 auto;
 }
 
@@ -114,10 +118,25 @@ nav img{
 }
 
 
-@media(nax-375){
-    .hero__content {
-        text-align: left;
-    }
+/* main nav section */
+.nav-section{
+    padding-top: 2rem;
+    padding-bottom:2rem;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.main-nav li a {
+   font-size: 2rem;
+   padding: .5rem 1rem;
+   text-transform: capitalize;
+   color:#000000;
+   letter-spacing: 2px;
 }
 
 
